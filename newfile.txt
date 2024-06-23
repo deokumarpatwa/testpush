@@ -1,2 +1,4 @@
 A new file added
 to test the git
+
+New line new feature branch
