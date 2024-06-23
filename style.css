@@ -1,0 +1,139 @@
+/* styles.css */
+
+
+/* Set the font family for the entire document */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Style headings */
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+#header {
+    background-color: #007bff;
+    padding: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container>.child {
+    background-color: #f8f8f8;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.container>.child>p {
+    color: #333;
+    font-size: 18px;
+}
+
+
+.container>.child>p>span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid black;
+    margin: 20px 30px 20px 30px;
+}
+
+/* Style paragraphs */
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base styles for mobile devices */
+.column {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+
+/* Styles for tablets and larger screens */
+@media screen and (min-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+/* Styles for desktops and larger screens */
+@media screen and (min-width: 992px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f8f8;
+}
+
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+.box {
+    background-color: var(--secondary-color);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML5 Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Welcome to my HTML5 Document!</h1>
+  <p>This is a paragraph of text in my document.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM API Example</title>
+</head>
+<body>
+  <h1 id="my-heading">Hello, world!</h1>
+  <p>Click the button to change the heading text</p>
+  <button id="my-button">Click me</button>
+
+<script>
+  // Get a reference to the heading element
+  const myHeading = document.getElementById('my-heading');
+
+  // Get a reference to the button element
+  const myButton = document.getElementById('my-button');
+
+  // Add an event listener to the button element
+  myButton.addEventListener('click', function() {
+  // Update the text of the heading element
+  myHeading.textContent = 'Hello, DOM!';
+  });
+</script>
+</body>
+</html>
+
+<body onload="myFunction()"></body>

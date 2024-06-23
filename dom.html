@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>DOM Example</h1>
+    <p id="demo">This is a demonstration of the DOM.</p>
+    <a href="https://www.learning.sap.com"
+      >Click here to for Free SAP Training</a
+    >
+    <table>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+      </tr>
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 id="my-heading">Hello, world!</h1>
+    <p>Click the button to change the heading text</p>
+    <button id="my-button">Click me</button>
+    <script>
+      // Get a reference to the heading element
+      const myHeading = document.getElementById("my-heading");
+
+      // Get a reference to the button element
+      const myButton = document.getElementById("my-button");
+
+      // Add an event listener to the button element
+      myButton.addEventListener("click", function () {
+        // Update the text of the heading element
+        myHeading.textContent = "Hello, DOM!";
+      });
+    </script>
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      minlength="8"
+      required
+    />
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="1" cols="40"></textarea
+      ><br /><br />
+
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="general">General</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option></select
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
